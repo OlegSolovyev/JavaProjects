@@ -8,6 +8,6 @@ public class Manager extends Employee {
     }
 
     public void paySalary(){
-        System.out.println("Salary payed: "+getSalary()+managerBonus);
+        System.out.println("Salary payed to Manager: "+getSalary()+managerBonus);
     }
 }
