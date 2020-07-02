@@ -1,6 +1,6 @@
 package com.company;
 
-public class JavaScriptProgrammer extends Employee{
+public class JavaScriptProgrammer extends Programmer{
 
     public JavaScriptProgrammer(double salary, String name) {
         super(salary,name);
@@ -10,7 +10,4 @@ public class JavaScriptProgrammer extends Employee{
         System.out.println("I'm JavaScript Programmer. I write JavaScript Program");
     }
 
-    public void codeReview(){
-        System.out.println("This JavaScript code is good");
-    }
 }

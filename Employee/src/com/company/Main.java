@@ -22,4 +22,11 @@ public class Main {
         programmers[1].work();
 
     }
+
+    private static boolean isProgrammer(Employee employee){
+    	if(employee instanceof Programmer){
+    		return true;
+		}
+    	return false;
+	}
 }
