@@ -1,6 +1,6 @@
 package com.company;
 
-public class Employee {
+public abstract class Employee {
     private String name;
     private double salary;
 
@@ -13,9 +13,7 @@ public class Employee {
         System.out.println("Salary payed: "+salary);
     }
 
-    public void work(){
-        System.out.println("I'm working");
-    }
+    public abstract void work();
 
     public double getSalary(){
         return salary;
