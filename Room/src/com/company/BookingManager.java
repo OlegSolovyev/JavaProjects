@@ -16,6 +16,6 @@ public class BookingManager {
     }
 
     public static void printBookingNumber(Booking booking){
-        System.out.println(booking.getRoom().getNumber()+"."+booking.getDateInterval().getStart().numberDate()+"."+booking.getDateInterval().getFinish().numberDate());
+        System.out.println(booking.getRoom().getNumber()+"."+booking.getDateInterval().getStart().numberDate()+"."+booking.getDateInterval().getFinish().numberDate()+"");
     }
 }
