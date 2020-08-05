@@ -20,8 +20,23 @@ public class Main {
                         new Date(13,8,2024)
                 )
         );
+
+                Booking b3= new Booking(
+                new StandardRoom("66",3),
+                new Person("John1"),
+                new DateInterval(
+                        new Date(13,8,2020),
+                        new Date(13,8,2024)
+                )
+        );
+
+                BookingList bookingList = new ArrayBookingList(3);
+                bookingList.add(b1);
+                //bookingList.add(b2);
+                //bookingList.add(b3);
+                bookingList.print();
        // System.out.println(b1);
       //  System.out.println(b2);
-        BookingManager.printBookingNumber(b1);
+      //  BookingManager.printBookingNumber(b1);
     }
 }
