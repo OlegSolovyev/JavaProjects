@@ -9,8 +9,13 @@ public class DateInterval {
     private int days;
 
     public DateInterval(Date start, Date finish) {
-        this.start = start;
-        this.finish = finish;
+        if (start.compareTo(finish)>1){
+            this.start = finish;
+            this.finish = start;
+        } else {
+                this.start = start;
+                this.finish = finish;
+        }
     }
 
     public Date getStart() {
