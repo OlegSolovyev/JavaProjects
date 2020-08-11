@@ -19,4 +19,5 @@ public class CalcTest {
         boolean res= calc.minus()== (calc.getA() - calc.getB());
         Assert.assertTrue(res);
     }
+
 }

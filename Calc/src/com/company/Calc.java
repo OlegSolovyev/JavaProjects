@@ -31,4 +31,5 @@ public class Calc {
     public int getB() {
         return b;
     }
+
 }
