@@ -23,4 +23,12 @@ public class Calc {
     public int divide(){
         return a/b;
     }
+
+    public int getA() {
+        return a;
+    }
+
+    public int getB() {
+        return b;
+    }
 }
