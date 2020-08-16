@@ -1,0 +1,46 @@
+package com.company;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class ArrayBookingListTest {
+
+    @Test
+    public void isBookingRemoved(){
+        boolean flag=false;
+        ArrayBookingList arrayBookingList=new ArrayBookingList(3);
+        Booking b1=new Booking(
+                new StandardRoom("1",2),
+                new Person("Jack"),
+                new DateInterval(new MyDate(30,7,2020),
+                        new MyDate(10,8,2020))
+        );
+
+
+        Booking b2=new Booking(
+                new SuiteRoom("2",2),
+                new Person("Nick"),
+                new DateInterval(new MyDate(11,8,2020),
+                        new MyDate(13,8,2020))
+        );
+
+
+
+        Booking b3=new Booking(
+                new SuiteRoom("3",2),
+                new Person("Nick1"),
+                new DateInterval(new MyDate(11,8,2020),
+                        new MyDate(13,8,2020))
+        );
+
+        arrayBookingList.add(b1);
+        arrayBookingList.add(b2);
+        arrayBookingList.add(b3);
+        arrayBookingList.remove(1);
+        if (arrayBookingList.getCapacity()==3 || arrayBookingList.getByIndex(1)==b2){
+            flag=true;
+        }
+        Assert.assertFalse(flag);
+
+    }
+}
